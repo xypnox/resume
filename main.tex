@@ -29,13 +29,13 @@
 \defaultfontfeatures{Mapping=tex-text}
 % \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
 % \fontspec{[FontAwesome.otf]}
-\setmainfont[Path = ./Lato/,  %% Optional; but UPDATE this if 
+\setmainfont[Path = ./fonts/,  %% Optional; but UPDATE this if 
                          %% your font files are in a folder
  Extension = .ttf,
- UprightFont = *-Regular,
- BoldFont = *-Bold,
- ItalicFont = *-Italic,
- SmallCapsFont = *-Regular]
+ UprightFont = Lato-Regular,
+ BoldFont = Lato-Bold,
+ ItalicFont = Lato-Italic,
+ SmallCapsFont = Aleo-Regular]
 {Lato}
 
 \usepackage{fontspec,xunicode,xltxtra,url,parskip} % Formatting packages
@@ -43,7 +43,20 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 \definecolor{primary}{RGB}{168, 44, 79}
-\definecolor{secondary}{RGB}{251, 139, 36}
+\definecolor{bold}{RGB}{50, 50, 50}
+\definecolor{default}{RGB}{50, 50, 50}
+
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{bold}{\oldtextbf{#1}}}
+
+
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{default}\global\let\default@color\current@color
+}
+\makeatother
+
+\AtBeginDocument{\globalcolor{red}}
 
 %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
 %\usepackage{fullpage}
@@ -59,7 +72,7 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}%[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
 
 \usepackage{multicol}
@@ -149,9 +162,9 @@
 
 \section{\textcolor{primary}{Work Experience}}
 
-\begin{tabularx}{\linewidth}{ l | X }
+\begin{tabularx}{\linewidth}{ r | X }
 
-\textsc{9th September} & \textbf{Assistant Tech Coordinator}\hfill\textbf{Technology Students' Gymkhana, IIT Kharagpur}\\
+\textsc{9th September 2018} & \textbf{Assistant Tech Coordinator}\hfill\textbf{Technology Students' Gymkhana, IIT Kharagpur}\\
 \textsc{ongoing}& {- Worked on the frontend and backend of the main Gymkhana website}\\
 & {- Worked on the frontend of the Gymkhana Blog}\\
 % & {- Reduced erroneous reports by over 30\% from other teams to QBO's Billing team with a revamped internal tool}\\
@@ -179,7 +192,7 @@
 \vspace{-0.6cm}
 \begin{tabular}{p{16cm}}
 % \fontsize{9}{12}\selectfont{
-\begin{description}[style=nextline, font=$\bullet$\hspace{2mm}\normalsize]
+\begin{description}[style=nextline, font=\normalsize\textcolor{primary}]
  \item[TodXpy] Created a command line todo application which focuses on simplicity and usablity using Python.
  \item[ePurifier] Created a command line tool to sanitize csv files containing emails.
  \item[Gymkhana Website] Worked on the newer version f Gymkhana website
@@ -237,8 +250,8 @@
   \textsc{Current} & \textbf{Core Team Member}, Kharagpur Open Source Society, IIT Kharagpur \\
   \multicolumn{2}{c}{} \\
 
-\textsc{Current} & \textbf{Maintainer}, MetaKGP\\
-\multicolumn{2}{c}{} \\
+% \textsc{Current} & \textbf{Maintainer}, MetaKGP\\
+% \multicolumn{2}{c}{} \\
 
 \textsc{Current} & \textbf{Member}, Space Technology Student's Society, IIT Kharagpur \\
 % \textsc{Apr 2017} & \textbf{Captain}, Team MMM, OpenSoft 2018\\
