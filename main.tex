@@ -23,13 +23,14 @@
  SmallCapsFont = Aleo-Regular]
 {Lato}
 
-\usepackage{fontspec,xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 \fontspec{[fontawesome-webfont.ttf]}
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 \definecolor{primary}{RGB}{168, 44, 79}
 \definecolor{bold}{RGB}{50, 50, 50}
 \definecolor{default}{RGB}{50, 50, 50}
+\definecolor{linkcolour}{RGB}{168,44,79}
 
 \let\oldtextbf\textbf
 \renewcommand{\textbf}[1]{\textcolor{bold}{\oldtextbf{#1}}}
@@ -37,11 +38,11 @@
 
 \makeatletter
 \newcommand{\globalcolor}[1]{%
-  \color{default}\global\let\default@color\current@color
+  \color{#1}\global\let\default@color\current@color
 }
 \makeatother
 
-\AtBeginDocument{\globalcolor{red}}
+\AtBeginDocument{\globalcolor{default}}
 
 %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
 %\usepackage{fullpage}
@@ -50,11 +51,10 @@
 % \hoffset{}
 %\geometry{a4paper,left=20mm, top=20mm}
 %  To reduce the height of the top margin uncomment: 
-\addtolength{\voffset}{-0.5cm}
+\addtolength{\voffset}{0cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 %\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
-\definecolor{linkcolour}{rgb}{0.3,0.3,0.3} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
@@ -134,7 +134,7 @@
 & \textit{Competent:} C, C++, Rust, Golang, Haskell \\
 \textsc{Libraries / Frameworks} & Flask, Requests\\
 % \textsc{Databases} & MySQL, MongoDB\\
-\textsc{Systems / Platforms} & Git, Heroku, Linux, Android\\
+\textsc{Systems / Platforms} & Git, Heroku, Linux, Image Manipulation, Blender\\
 %\textsc{Markup / Templating} & HTML, CSS, Sass
 \end{tabular}
 
@@ -175,8 +175,8 @@
 %----------------------------------------------------------------------------------------
 
 \section{\textcolor{primary}{Projects}}
-\vspace{-0.6cm}
-\begin{tabular}{p{16cm}}
+\vspace{-0.5cm}
+\begin{tabular}{p{17.5cm}}
 % \fontsize{9}{12}\selectfont{
 \begin{description}[style=nextline, font=\normalsize\textcolor{primary}]
  \item[TodXpy] Created a command line todo application which focuses on simplicity and usablity using Python.
