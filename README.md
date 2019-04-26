@@ -1,5 +1,36 @@
 # Resume
 
+This Resume was borrowed and modified from themes available at Overleaf.
+
+I do not use the online overleaf editor and prefer touse VS Code to edit the resume. However, This should work just fine in Overleaf too.
+
+## Build Instructions
+
+1. Install `texlive-full` package on Ubuntu.
+2. Install the `latex-workshop` package for VS Code.
+
+Add in the settings (if not already):
+
+```json
+"latex-workshop.latex.recipes": [{
+    "name": "xelatex",
+    "tools": [
+        "xelatex"
+    ]
+}],
+"latex-workshop.latex.tools": [{
+    "name": "xelatex",
+    "command": "xelatex",
+    "args": [
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%.tex"
+    ],
+    "env": {}
+}],
+"latex-workshop.view.pdf.viewer": "tab"
+```
+
 ## Aditya Vikram Singh
 [xypnox.com](https://www.xypnox.com)
 
@@ -12,58 +43,3 @@ India - 721302
 ### M.Sc. (5 year) in Physics
 *2017-2022 (Expected)*
 Indian Institute of Technology, Kharagpur
-
-### Technical Skills
-
-#### Programming
-
-*Libraries / Frameworks*
-
-Proficient: Python, Javascript, Frontend
-
-Competent: C, C++, Rust, Golang, Haskell
-
-*Systems / Platforms*
-
-Flask, Requests
-
-Git, Heroku, Linux, Image Manipulation, Blender
-
-## Work Experience
-
-### 9th September 2018
-ongoing Assistant Tech Coordinator Technology Students’ Gymkhana, IIT Kharagpur
-- Worked on the frontend and backend of the main Gymkhana website
-- Worked on the frontend of the Gymkhana Blog
-
-### 2018 Sub Head
-
-#### NSSC 2018
-- Organised and Judged several events related to astronomy and space explo-
-ration.
-
-#### 2017 Junior Coordinator
-- Handled Participants and Guests for the fest.
-NSSC 2017
-
-## Projects
-
-### TodXpy
-Created a command line todo application which focuses on simplicity and usablity using
-Python.
-
-### ePurifier
-Created a command line tool to sanitize csv files containing emails.
-
-### Gymkhana Website
-Worked on the newer version f Gymkhana website
-
-### Kronos
-Worked on a App that shows previous semester’s grade distribution in a graph.
-
-
-## Positions of Responsibility
-
-Current Core Team Member, Kharagpur Open Source Society, IIT Kharagpur
-
-Current Member, Space Technology Student’s Society, IIT Kharagpur
