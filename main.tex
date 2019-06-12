@@ -1,6 +1,6 @@
 %
 %┏━┓┏━╸┏━┓╻ ╻┏┳┓┏━╸
-%┣┳┛┣╸ ┗━┓┃ ┃┃┃┃┣╸ 
+%┣┳┛┣╸ ┗━┓┃ ┃┃┃┃┣╸
 %╹┗╸┗━╸┗━┛┗━┛╹ ╹┗━╸
 %
 
@@ -14,23 +14,23 @@
 \defaultfontfeatures{Mapping=tex-text}
 % \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
 % \fontspec{[FontAwesome.otf]}
-\setmainfont[Path = ./fonts/,  %% Optional; but UPDATE this if 
+\setmainfont[Path = ./fonts/,  %% Optional; but UPDATE this if
                          %% your font files are in a folder
  Extension = .ttf,
  UprightFont = Lato-Regular,
  BoldFont = Lato-Bold,
  ItalicFont = Lato-Italic,
- SmallCapsFont = Aleo-Regular]
-{Lato}
+ SmallCapsFont = WorkSans-SemiBold]
+{WorkSans}
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 \fontspec{[fontawesome-webfont.ttf]}
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
-\definecolor{primary}{RGB}{168, 44, 79}
+\definecolor{primary}{RGB}{30, 30, 30}
 \definecolor{bold}{RGB}{50, 50, 50}
-\definecolor{default}{RGB}{50, 50, 50}
-\definecolor{linkcolour}{RGB}{168,44,79}
+\definecolor{default}{RGB}{80, 80, 80}
+\definecolor{linkcolor}{RGB}{80, 80, 80}
 
 \let\oldtextbf\textbf
 \renewcommand{\textbf}[1]{\textcolor{bold}{\oldtextbf{#1}}}
@@ -44,18 +44,18 @@
 
 \AtBeginDocument{\globalcolor{default}}
 
-%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be
 %\usepackage{fullpage}
 \usepackage{geometry}
 \geometry{a4paper,margin=1cm}
 % \hoffset{}
 %\geometry{a4paper,left=20mm, top=20mm}
-%  To reduce the height of the top margin uncomment: 
+%  To reduce the height of the top margin uncomment:
 \addtolength{\voffset}{0cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
-%\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+%\definecolor{linkcolor}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolor,linkcolor=linkcolor} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}%[\titlerule] % Text formatting of sections
@@ -113,9 +113,9 @@
 
 \section{\textcolor{primary}{Education}}
 
-\begin{tabular}{r|p{16cm}}	
-2017-2022 & M.Sc. (5 year) in \textbf{Physics}\hfill\textsc{GPA}: 7.75/10.0\\
-\textsc{(Expected)}&\textbf{Indian Institute of Technology}, Kharagpur\\
+\begin{tabular}{r|p{16cm}}
+\textsc{(2017-2022)} & M.Sc. (5 year) in \textbf{Physics}\hfill\textsc{GPA}: 7.75/10.0\\
+Expected &\textbf{Indian Institute of Technology}, Kharagpur\\
 %&\textbf{Coursework: }{Programming and Data Structures, Algorithms-I \& II, Software Engineering, Compilers, Switching Circuits, Operating Systems, Computer Networks, Information Retrieval, Database Management Systems, Theory of Computation, Machine Learning, Image Processing, Advanced Graph Theory}
 \end{tabular}
 
@@ -124,25 +124,25 @@
 
 
 %----------------------------------------------------------------------------------------
-%	SKILLS 
+%	SKILLS
 %----------------------------------------------------------------------------------------
 
 \section{\textcolor{primary}{Technical Skills}}
 
 \begin{tabular}{r|p{13cm}}
-\textsc{Programming} & \textit{Proficient:} Python, Frontend\\
-& \textit{Competent:} C, C++, JavaScript, Rust, Golang, Haskell \\
+\textsc{Programming} & \textit{Proficient:} Javascript, Python\\
+& \textit{Competent:} C, C++, Rust, Golang, Haskell \\
 \textsc{Libraries / Frameworks} & Flask, Requests\\
 % \textsc{Databases} & MySQL, MongoDB\\
 \textsc{Systems / Platforms} & Git, Heroku, Linux, Image Manipulation, Blender\\
 %\textsc{Markup / Templating} & HTML, CSS, Sass
 \end{tabular}
 
-\vspace{0.5cm}
+\vspace{0.25cm}
 
 
 %----------------------------------------------------------------------------------------
-%	Work Experience 
+%	Work Experience
 %----------------------------------------------------------------------------------------
 
 
@@ -167,7 +167,7 @@
 \textsc{} & {- Handled Participants and Guests for the fest.}\\
 \end{tabularx}
 
-\vspace{0.2cm}
+\vspace{0.17cm}
 
 
 %----------------------------------------------------------------------------------------
@@ -176,22 +176,18 @@
 
 \section{\textcolor{primary}{Projects}}
 \vspace{-0.5cm}
-\begin{tabular}{p{17.5cm}}
-% \fontsize{9}{12}\selectfont{
+\begin{tabular}{p{18.5cm}}
+\fontsize{11}{12}\selectfont{
 \begin{description}[style=nextline, font=\normalsize\textcolor{primary}]
  \item[TodXpy] Created a command line todo application which focuses on simplicity and usablity using Python.
  \item[ePurifier] Created a command line tool to sanitize csv files containing emails.
  \item[Gymkhana Website] Worked on the newer version f Gymkhana website
-%  \item[Data extraction from biomedical literature for automating systematic reviews] Worked on feature detection of a particular class of text (specifically, inclusion and exclusion criteria for patients) from a huge collection of biomedical literature using NLP Techniques with high precision and recall.
  \item[Kronos] Worked on a App that shows previous semester's grade distribution in a graph.
-%  \item[Retrieving salient sentences from Reddit AMAs] Built a summariser that provides summaries from /r/iAMA clustered by topics, using k-mean clustering and Alchemy API.
-%  \item[Studious] Built a complete course management system that supported authentication \& authorization, User Access Control for 4 different types of users, real-time messaging with notifications (using socket.io), calendar support, etc.
-%  \item[Medical Lab Automation System] Developed software using JAVA Swing for a Medical Lab Automation System which handles and automates all requests of the management and patients.
 \end{description}
-% }
+}
 \end{tabular}
 
-\vspace{0.3cm}
+\vspace{0.2cm}
 
 
 %----------------------------------------------------------------------------------------
@@ -280,7 +276,7 @@
 
 % %\begin{multicols}{2}
 % - Secured 98.11 percentile in JEE Advanced 2013 \\
-% - Secured 99.33 percentile in JEE Mains 2013 \\ 
+% - Secured 99.33 percentile in JEE Mains 2013 \\
 % - Secured AIR 415 in ACM ICPC – Amritapuri online round, 2014
 % %\end{multicols}
 
