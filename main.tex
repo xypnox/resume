@@ -17,20 +17,20 @@
 \setmainfont[Path = ./fonts/,  %% Optional; but UPDATE this if
                          %% your font files are in a folder
  Extension = .ttf,
- UprightFont = Lato-Regular,
- BoldFont = Lato-Bold,
- ItalicFont = Lato-Italic,
- SmallCapsFont = WorkSans-SemiBold]
-{WorkSans}
+ UprightFont = Jost-400-Book,
+ BoldFont = Jost-600-Semi,
+ ItalicFont = Jost-500-MediumItalic,
+ SmallCapsFont = Jost-600-Semi]
+{Jost}
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 \fontspec{[fontawesome-webfont.ttf]}
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
-\definecolor{primary}{RGB}{30, 30, 30}
-\definecolor{bold}{RGB}{50, 50, 50}
+\definecolor{primary}{RGB}{222, 0, 102}
+\definecolor{bold}{RGB}{107, 95, 255}
 \definecolor{default}{RGB}{80, 80, 80}
-\definecolor{linkcolor}{RGB}{0, 0, 0}
+\definecolor{linkcolor}{RGB}{107, 95, 255}
 
 \let\oldtextbf\textbf
 \renewcommand{\textbf}[1]{\textcolor{bold}{\oldtextbf{#1}}}
@@ -90,19 +90,21 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 \begin{multicols}{3}
-% \par{\centering\normalsize {\textsc{Undergraduate student at Indian Institute of Technology, Kharagpur}}\par}\normalsize
-% \par{\centering\normalsize {\textsc{Department of Computer Science and Engineering}}\par}\normalsize
-%\par{{\begin{center}Dual Degree, \emph{Computer Science and Engineering}\end{center}}}
-\normalsize  \faGlobe\ {\href{http://xypnox.com/}{\  xypnox.com}}\\
-\normalsize \faGithub\ {\href{https://github.com/xypnox}{\  xypnox}}\\
-\normalsize  \faTwitter\ {\href{https://twitter.com/xypnox}{\  xypnox}}\\
-\columnbreak
-\normalsize\par{\centering{\Large\textsc{\textcolor{primary}{Aditya} Vikram Singh}}} % Your name
-\vspace{-0.1cm}
-\par{\centering\normalsize {SDS-113, MMM Hall of Residence, IIT Kharagpur, WB, India - 721302}\hfill\par}
-\columnbreak
-\raggedright\hfill\normalsize \faEnvelope\ {\href{mailto:xypnox@iitkgp.ac.in}{\  xypnox@iitkgp.ac.in}}\\
-\raggedright\hfill{\faPhone\ \  +91-8370955554}
+  % \par{\centering\normalsize {\textsc{Undergraduate student at Indian Institute of Technology, Kharagpur}}\par}\normalsize
+  % \par{\centering\normalsize {\textsc{Department of Computer Science and Engineering}}\par}\normalsize
+  %\par{{\begin{center}Dual Degree, \emph{Computer Science and Engineering}\end{center}}}
+  \normalsize  \faGlobe\ {\href{http://xypnox.com/}{\  xypnox.com}}\\
+  \normalsize \faGithub\ {\href{https://github.com/xypnox}{\  xypnox}}\\
+  \normalsize  \faTwitter\ {\href{https://twitter.com/xypnox}{\  xypnox}}\\
+  \columnbreak
+  \normalsize\par{\centering{\Large\textsc{\textcolor{primary}{Aditya} Vikram Singh}}
+    \centering{\large\textsc{\textcolor{primary}{xypnox}}}
+
+  } % Your name
+
+  \columnbreak
+  \raggedright\hfill\normalsize \faEnvelope\ {\href{mailto:xypnox@gmail.com}{\  xypnox@gmail.com}}\\
+  \raggedright\hfill{\faPhone\ \  +91-8370955554}
 \end{multicols}
 
 \vspace{-0.5cm}
@@ -115,9 +117,9 @@
 \section{\textcolor{primary}{Education}}
 
 \begin{tabular}{r|p{15.7cm}}
-\textsc{(2017-2022)} & M.Sc. (5 year) in \textbf{Physics}\hfill\textsc{GPA}: 7.9/10.0\\
-Expected &\textbf{Indian Institute of Technology}, Kharagpur\\
-%&\textbf{Coursework: }{Programming and Data Structures, Algorithms-I \& II, Software Engineering, Compilers, Switching Circuits, Operating Systems, Computer Networks, Information Retrieval, Database Management Systems, Theory of Computation, Machine Learning, Image Processing, Advanced Graph Theory}
+  \textsc{2017-2022} & M.Sc. (5 year) in \textbf{Physics}\hfill\textsc{GPA}: 7.51/10 \\
+  Expected           & \textbf{Indian Institute of Technology}, Kharagpur            \\
+  %&\textbf{Coursework: }{Programming and Data Structures, Algorithms-I \& II, Software Engineering, Compilers, Switching Circuits, Operating Systems, Computer Networks, Information Retrieval, Database Management Systems, Theory of Computation, Machine Learning, Image Processing, Advanced Graph Theory}
 \end{tabular}
 
 
@@ -131,15 +133,15 @@ Expected &\textbf{Indian Institute of Technology}, Kharagpur\\
 \section{\textcolor{primary}{Technical Skills}}
 
 \begin{tabular}{r|p{13cm}}
-\textsc{Programming} & \textit{Proficient:} Javascript, Python\\
-& \textit{Competent:} C, C++, Rust, Golang, Haskell \\
-\textsc{Libraries / Frameworks} & Flask, Requests\\
-% \textsc{Databases} & MySQL, MongoDB\\
-\textsc{Systems / Platforms} & Git, Heroku, Linux, Image Manipulation, Blender\\
-%\textsc{Markup / Templating} & HTML, CSS, Sass
+  \textsc{Programming}            & \textit{Proficient:} Javascript, Python, Sass          \\
+                                  & \textit{Competent:} C, C++, Elm, Rust, Golang, Haskell \\
+  \textsc{Libraries / Frameworks} & Flask, Requests, React, Elm-UI                         \\
+  % \textsc{Databases} & MySQL, MongoDB\\
+  \textsc{Systems / Platforms}    & Git, Heroku, Linux, Image Manipulation, Blender        \\
+  %\textsc{Markup / Templating} & HTML, CSS, Sass
 \end{tabular}
 
-\vspace{0.25cm}
+\vspace{0.5cm}
 
 
 %----------------------------------------------------------------------------------------
@@ -151,29 +153,28 @@ Expected &\textbf{Indian Institute of Technology}, Kharagpur\\
 
 \begin{tabularx}{\linewidth}{ r | X }
 
-\textsc{September 2018} & \textbf{Intern}\hfill\textbf{\href{https://finbox.in/}{FinBox}}\\
-\textsc{May 2019}& {- Designed and Created the \href{https://finbox.in/}{website (finbox.in)} of FinBox}\\
-% & {- Reduced erroneous reports by over 30\% from other teams to QBO's Billing team with a revamped internal tool}\\
-\multicolumn{2}{c}{} \\
+  \textsc{July 2020} & \textbf{Fullstack Intern}\hfill\textbf{\href{https://fifthtry.com/}{Fifthtry}}                                              \\
+  \textsc{Ongoing}   & {$\bullet$ Currently working as a Fullstack developer for Fifithtry, a tech startup aiming to revolutionize documentation.} \\
+                     & {$\bullet$ Programming in Rust for the backend and Elm for frontend using the open source framework Realm.}                 \\
+                     & {$\bullet$ Also contributing to the core development of the Realm web framework.}                                           \\
+  \multicolumn{2}{c}{}                                                                                                                             \\
 
-\textsc{September 2018} & \textbf{Asst. Tech Coordinator}\hfill\textbf{Technology Students' Gymkhana, IIT Kharagpur}\\
-\textsc{May 2019}& {- Created the main \href{http://www.gymkhana.iitkgp.ac.in/index.php}{Gymkhana website} }\\
-& {- Worked on the frontend of the  \href{http://www.gymkhana.iitkgp.ac.in/blog/}{Gymkhana Blog}}\\
-% & {- Reduced erroneous reports by over 30\% from other teams to QBO's Billing team with a revamped internal tool}\\
-\multicolumn{2}{c}{} \\
+  \textsc{May 2019}  & \textbf{Frontend and Design Intern}\hfill\textbf{\href{https://finbox.in/}{FinBox}}                                         \\
+  \textsc{July 2019} & {$\bullet$ Designed and Created the \href{https://finbox.in/}{website (finbox.in)} of FinBox}                               \\
+                     & {$\bullet$ Organized Design Sprints to target specific audiences, including customers, job applicants, media etc.
+    }                                                                                                                                              \\
+                     & {$\bullet$ Started from scratch with UI/UX to develop a unique brand identity for the company.
+    }                                                                                                                                              \\
 
-\textsc{2018} & \textbf{Sub Head}\hfill\textbf{NSSC 2018}\\
-%\textsc{May 2016}& {- Worked on integrating a Business Intelligence tool that aggregates data from all of ezDI's products for easy analytics.}\\
-\textsc{}& {- Organised and Judged several events related to astronomy and space exploration in India's largest space fest.}\\
-% & {- }\\
-\multicolumn{2}{c}{} \\
+                     & {$\bullet$ Built with React-Static, a static site framework. Made personalized Icons and Illustrations with animations}     \\
+  \multicolumn{2}{c}{}                                                                                                                             \\
 
-\textsc{2017} & \textbf{Junior Coordinator} \hfill\textbf{NSSC 2017}\\
-% \textsc{Feb 2015} & \textbf{Guide: }\textmd{\href{http://iitkgp.ac.in/fac-profiles/showprofile.php?empcode=aWmdU}{Professor C. S. Kumar}}\\
-\textsc{} & {- Handled Participants and Guests for India's largest space fest.}\\
+  \textsc{Sept 2018} & \textbf{Asst. Tech Coordinator}\hfill\textbf{Technology Students' Gymkhana, IIT Kharagpur}                                  \\
+  \textsc{May 2019}  & {$\bullet$ Created the main \href{http://www.gymkhana.iitkgp.ac.in/index.php}{Gymkhana website} }                           \\
+                     & {$\bullet$ Worked on the frontend of the  \href{http://www.gymkhana.iitkgp.ac.in/blog/}{Gymkhana Blog}}                     \\
 \end{tabularx}
 
-\vspace{0.17cm}
+\vspace{0.5cm}
 
 
 %----------------------------------------------------------------------------------------
@@ -183,70 +184,79 @@ Expected &\textbf{Indian Institute of Technology}, Kharagpur\\
 \section{\textcolor{primary}{Projects}}
 \vspace{-1cm}
 \begin{tabular}{p{18.5cm}}
-\fontsize{11}{12}\selectfont{
-\begin{description}[labelsep=1em, align=right, labelwidth=1.6in, itemsep=0.5em, font=\normalsize\textcolor{primary}]
- \item[TodXpy] Created a command line todo application which focuses on simplicity and usablity.
- \item[ePurifier] Created a command line tool to sanitize csv files containing emails.
- \item[Gymkhana Website] Worked on the newer version of Gymkhana website.
- \item[Kronos] Shows previous semester's grade distribution in a graph.
- \item[Gyft2] Generate Google calendar from students's time table on ERP.
-\end{description}
-}
+  \fontsize{11}{12}\selectfont{
+    \begin{description}[labelsep=1em, align=right, labelwidth=1.6in, itemsep=0.5em, font=\normalsize\textcolor{primary}]
+      \item[TodXpy] Created a command line todo application which focuses on simplicity and usablity.
+      \item[ePurifier] Created a command line tool to sanitize csv files containing emails.
+      \item[Gymkhana Website] Worked on the newer version of Gymkhana website.
+      \item[Kronos] Shows previous semester's grade distribution in a graph.
+      \item[Gyft2] Generate Google calendar from students's time table on ERP.
+    \end{description}
+  }
 \end{tabular}
-
-\vspace{0.2cm}
 
 
 %----------------------------------------------------------------------------------------
 %	Hackathons and Competitions
 %----------------------------------------------------------------------------------------
+\pagebreak
 
-% \section{\textcolor{primary}{Hackathons \& Competitions}}
+\phantom {Hello}
 
-% \begin{tabularx}{\linewidth}{ l | X }
+\section{\textcolor{primary}{Hackathons \& Competitions}}
 
-% \textsc{Mar 17} & \textbf{MetaKGP Dashboard}\hfill\textbf{Inter-IIT Tech Meet `17}\\
-% & {- Won bronze medal for building a NUS-Mods style dashboard with various utilities created for students of my college. The dashboard was built with a NodeJS backend and had several utilities including smart timetable, news aggregator, question paper portal and professor finder to name a few.}\\
-% \multicolumn{2}{c}{} \\
+\begin{tabularx}{\linewidth}{ l | X }
 
-% \textsc{Dec 16} & \textbf{StoI} \textsc{(SMS to Internet)}\hfill\textbf{Pragyan Hackathon `17}\\
-% & {- Made an android application for basic internet access like Google Maps navigation, Duckduckgo quick search, Zomato reviews, etc. without a data connection. Communication with the server was done using Twilio's SMS APIs.}\\
-% \multicolumn{2}{c}{} \\
+  \textsc{Dec 2019}
+   & \textbf{MARG}\hfill\textbf{Inter-IIT Tech Meet `19'}                                                                                                        \\
 
-% \textsc{Apr 16} & \textbf{Data Extractor for 2D plots}\hfill\textbf{OpenSoft '16}\\
-% & {- Built a graph extractor that detects multi-variable graphs in any given PDF and tabulates them autonomously taking into consideration features like axis values, scales and legends.}\\
-% % & {- Was primarily responsible for detecting and scaling the ticks from the colour segregated image and scale it appropriately using the axis values and generate the plot. Was also solely responsible for generating the table structure using Python libraries and to fully build a working GUI for the application on Java Swing.}\\
-% %\multicolumn{2}{c}{} \\
+   & {$\bullet$ Won the Gold Medal in Inter-IIT Tech Meet 2019 in the Coding Hackathon competition.}                                                             \\
 
-% %\textsc{Mar 15} & \textbf{Campus Connexions}\hfill\textbf{Microsoft Code.Fun.Do 2015}\\
-% %& {- Developed an intra-college social networking app with real time feed from registered users that would serve as a platform for official and unofficial announcements related to the college.}\\
-% % Windows Azure was used for database management and development was primarily done with Visual Studio.}\\
-% % & {- Was solely responsible for building the complete front end for the app, and to connect with Azure to dynamically load content in the news feed.}\\
-% %\multicolumn{2}{c}{} \\
+   & {$\bullet$ Monitor Assess Report Guide : A portable device friendly application for citizens to assist in reporting a damaged road that requires attention,
+      emergency situations (roads unfit for travel) and provide feedback on ongoing construction projects.
+    }                                                                                                                                                            \\
+   & {$\bullet$ Worked on UI/UX and handled the entire Frontend development of the Application. Being a PWA it utlized the WebAPIs for Camera and Location.}     \\
 
-% %\textsc{Dec 2014} & \textbf{Object Follower Robot}\hfill\textbf{Technology Robotix Society, IIT Kharagpur}\\
-% %& {- Implemented image detection algorithms using openCV for a WSAD robot which can follow a specified path using the directives sent by overhead camera whose recorded images were processed and movement instructions generated.}
-% \end{tabularx}
+  \multicolumn{2}{c}{}                                                                                                                                           \\
+
+  % \textsc{Dec 16} & \textbf{StoI} \textsc{(SMS to Internet)}\hfill\textbf{Pragyan Hackathon `17}                                                                                                                                                                                                                          \\
+  %                 & {- Made an android application for basic internet access like Google Maps navigation, Duckduckgo quick search, Zomato reviews, etc. without a data connection. Communication with the server was done using Twilio's SMS APIs.}                                                                       \\
+  % \multicolumn{2}{c}{}                                                                                                                                                                                                                                                                                                    \\
+
+  % \textsc{Apr 16} & \textbf{Data Extractor for 2D plots}\hfill\textbf{OpenSoft '16}                                                                                                                                                                                                                                       \\
+  %                 & {- Built a graph extractor that detects multi-variable graphs in any given PDF and tabulates them autonomously taking into consideration features like axis values, scales and legends.}                                                                                                              \\
+  % & {- Was primarily responsible for detecting and scaling the ticks from the colour segregated image and scale it appropriately using the axis values and generate the plot. Was also solely responsible for generating the table structure using Python libraries and to fully build a working GUI for the application on Java Swing.}\\
+  %\multicolumn{2}{c}{} \\
+
+  %\textsc{Mar 15} & \textbf{Campus Connexions}\hfill\textbf{Microsoft Code.Fun.Do 2015}\\
+  %& {- Developed an intra-college social networking app with real time feed from registered users that would serve as a platform for official and unofficial announcements related to the college.}\\
+  % Windows Azure was used for database management and development was primarily done with Visual Studio.}\\
+  % & {- Was solely responsible for building the complete front end for the app, and to connect with Azure to dynamically load content in the news feed.}\\
+  %\multicolumn{2}{c}{} \\
+
+  %\textsc{Dec 2014} & \textbf{Object Follower Robot}\hfill\textbf{Technology Robotix Society, IIT Kharagpur}\\
+  %& {- Implemented image detection algorithms using openCV for a WSAD robot which can follow a specified path using the directives sent by overhead camera whose recorded images were processed and movement instructions generated.}
+\end{tabularx}
 
 % ----------------------------------------------------------------------------------------
 % 	POSITIONS OF RESPONSIBILITY
 % ----------------------------------------------------------------------------------------
 
-\vspace{-0.3cm}
+\vspace{0.5cm}
 \section{\textcolor{primary}{Positions of Responsibility}}
+\begin{tabularx}{\linewidth}{ l | X }
 
-\begin{tabular}{r|p{16cm}}
-  \textsc{Current} & \textbf{Executive Head}, Kharagpur Open Source Society, IIT Kharagpur \\
-  \textsc{2017-18} & \textbf{Core Team Member}, Kharagpur Open Source Society, IIT Kharagpur \\
-  \multicolumn{2}{c}{} \\
+  \textsc{2019-2020}
+   & \textbf{Executive Head}\hfill\textbf{Kharagpur Open Source Society}                                                                                   \\
+   & {$\bullet$ As an Executive Head, organized and lead workshops for Python, Ubuntu, Git etc. as a way to promote Open Source in IIT Kharagpur.}         \\
 
-% \textsc{Current} & \textbf{Maintainer}, MetaKGP\\
-% \multicolumn{2}{c}{} \\
+   & {$\bullet$ Organized and Mentored in Kharagpur Winter of Code, a month long winter workshop for students to guide them in contributing to Open Source
+      projects with 2000+ registrations across 75+ colleges.
+    }                                                                                                                                                      \\
+   & {$\bullet$ Managed the website and blog of KOSS in Hugo, also made several posters for events from scratch.}                                          \\
 
-\textsc{2017-19} & \textbf{Member}, Space Technology Student's Society, IIT Kharagpur \\
-% \textsc{Apr 2017} & \textbf{Captain}, Team MMM, OpenSoft 2018\\
-% \textsc{August 2017} & \textbf{}, CodeClub, IIT Kharagpur \\
-\end{tabular}
+  \multicolumn{2}{c}{}                                                                                                                                     \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	COURSEWORK
@@ -288,6 +298,20 @@ Expected &\textbf{Indian Institute of Technology}, Kharagpur\\
 % %\end{multicols}
 
 %----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
+% 	Extra Curricular
+% ----------------------------------------------------------------------------------------
+
+\vspace{0.5cm}
+\section{\textcolor{primary}{Extra Curricular Activities}}
+\begin{list} {$\bullet$} {}
+  \item {Personal website/Portfolio at \href {https://www.xypnox.com}{xypnox.com}. The site is pure HTML5 and SASS, with no templates. The focus is on speed and minimalism.}
+  \item {Created a Geometric Modern font derived from Aileron. Made with FontForge, exported to OTF format. \href {https://github.com/xypnox/oliver}{github.com/xypnox/oliver} }
+  \item {At IIT KGP, have been a part of several groups/societies/clubs' design team and created posters for them \href{https://posters.xypnox.com}{posters.xypnox.com}.}
+  \item {Contributed to several Open Source projects, Github profile at \href {https://github.com/xypnox}{github.com/xypnox}.}
+  \item { Maintain a personal blog at \href {https://www.xypnox.com/blag}{xypnox.com/blag}. Made with Hugo, a Go based static site generator with custom minimal theme.}
+  \item {Have some of the UI/UX and design work showcased at \href {https://www.behance.net/xypnox}{behance.net/xypnox}}
+\end{list}
 
 %\newpage
 %----------------------------------------------------------------------------------------
