@@ -77,6 +77,8 @@
 %  font={\bfseries\sffamily\color{red}}, % if colour is needed
 }
 
+\usepackage{graphicx}
+
 \def\arraystretch{1}
 \renewcommand{\baselinestretch}{1.1}
 
@@ -133,11 +135,11 @@
 \section{\textcolor{primary}{Technical Skills}}
 
 \begin{tabular}{r|p{13cm}}
-  \textsc{Programming}            & \textit{Proficient:} Javascript, Python, Sass          \\
-                                  & \textit{Competent:} C, C++, Elm, Rust, Golang, Haskell \\
-  \textsc{Libraries / Frameworks} & Flask, Requests, React, Elm-UI                         \\
+  \textsc{Programming}            & \textit{Proficient:} Javascript, Python, Sass   \\
+                                  & \textit{Competent:} C, C++, Elm, Rust           \\
+  \textsc{Libraries / Frameworks} & Flask, Requests, React, Elm-UI                  \\
   % \textsc{Databases} & MySQL, MongoDB\\
-  \textsc{Systems / Platforms}    & Git, Heroku, Linux, Image Manipulation, Blender        \\
+  \textsc{Systems / Platforms}    & Git, Heroku, Linux, Image Manipulation, Blender \\
   %\textsc{Markup / Templating} & HTML, CSS, Sass
 \end{tabular}
 
@@ -153,25 +155,28 @@
 
 \begin{tabularx}{\linewidth}{ r | X }
 
-  \textsc{July 2020} & \textbf{Fullstack Intern}\hfill\textbf{\href{https://fifthtry.com/}{Fifthtry}}                                              \\
-  \textsc{Ongoing}   & {$\bullet$ Currently working as a Fullstack developer for Fifithtry, a tech startup aiming to revolutionize documentation.} \\
-                     & {$\bullet$ Programming in Rust for the backend and Elm for frontend using the open source framework Realm.}                 \\
-                     & {$\bullet$ Also contributing to the core development of the Realm web framework.}                                           \\
-  \multicolumn{2}{c}{}                                                                                                                             \\
+  \textsc{July 2020} & \textbf{Fullstack Intern}\hfill\textbf{\href{https://fifthtry.com/}{Fifthtry}}                                          \\
+  \textsc{Sept 2020} & {$\bullet$ Interned as a Fullstack developer for Fifithtry, a tech startup aiming to revolutionize documentation.}      \\
+                     & {$\bullet$ Programmed in Rust for the backend and Elm for frontend using the open source framework Realm.}              \\
+                     & {$\bullet$ Also contributed to the core development of the Realm web framework.}                                        \\
 
-  \textsc{May 2019}  & \textbf{Frontend and Design Intern}\hfill\textbf{\href{https://finbox.in/}{FinBox}}                                         \\
-  \textsc{July 2019} & {$\bullet$ Designed and Created the \href{https://finbox.in/}{website (finbox.in)} of FinBox}                               \\
+                     & {$\bullet$ Impelmented analytics and core features of the product, with testing and design.}                            \\
+
+  \multicolumn{2}{c}{}                                                                                                                         \\
+
+  \textsc{May 2019}  & \textbf{Frontend and Design Intern}\hfill\textbf{\href{https://finbox.in/}{FinBox}}                                     \\
+  \textsc{July 2019} & {$\bullet$ Designed and Created the \href{https://finbox.in/}{website (finbox.in)} of FinBox}                           \\
                      & {$\bullet$ Organized Design Sprints to target specific audiences, including customers, job applicants, media etc.
-    }                                                                                                                                              \\
+    }                                                                                                                                          \\
                      & {$\bullet$ Started from scratch with UI/UX to develop a unique brand identity for the company.
-    }                                                                                                                                              \\
+    }                                                                                                                                          \\
 
-                     & {$\bullet$ Built with React-Static, a static site framework. Made personalized Icons and Illustrations with animations}     \\
-  \multicolumn{2}{c}{}                                                                                                                             \\
+                     & {$\bullet$ Built with React-Static, a static site framework. Made personalized Icons and Illustrations with animations} \\
+  \multicolumn{2}{c}{}                                                                                                                         \\
 
-  \textsc{Sept 2018} & \textbf{Asst. Tech Coordinator}\hfill\textbf{Technology Students' Gymkhana, IIT Kharagpur}                                  \\
-  \textsc{May 2019}  & {$\bullet$ Created the main \href{http://www.gymkhana.iitkgp.ac.in/index.php}{Gymkhana website} }                           \\
-                     & {$\bullet$ Worked on the frontend of the  \href{http://www.gymkhana.iitkgp.ac.in/blog/}{Gymkhana Blog}}                     \\
+  \textsc{Sept 2018} & \textbf{Asst. Tech Coordinator}\hfill\textbf{Technology Students' Gymkhana, IIT Kharagpur}                              \\
+  \textsc{May 2019}  & {$\bullet$ Created the main \href{http://www.gymkhana.iitkgp.ac.in/index.php}{Gymkhana website} }                       \\
+                     & {$\bullet$ Worked on the frontend of the  \href{http://www.gymkhana.iitkgp.ac.in/blog/}{Gymkhana Blog}}                 \\
 \end{tabularx}
 
 \vspace{0.5cm}
@@ -309,9 +314,16 @@
   \item {Created a Geometric Modern font derived from Aileron. Made with FontForge, exported to OTF format. \href {https://github.com/xypnox/oliver}{github.com/xypnox/oliver} }
   \item {At IIT KGP, have been a part of several groups/societies/clubs' design team and created posters for them \href{https://posters.xypnox.com}{posters.xypnox.com}.}
   \item {Contributed to several Open Source projects, Github profile at \href {https://github.com/xypnox}{github.com/xypnox}.}
-  \item { Maintain a personal blog at \href {https://www.xypnox.com/blag}{xypnox.com/blag}. Made with Hugo, a Go based static site generator with custom minimal theme.}
+  \item { Maintain a personal blog at \href {https://www.xypnox.com/blag}{xypnox.com/blag}. Made with Zola, a static site generator with my own \href{https://github.com/xypnox/xyblag-theme}{personal theme}.}
   \item {Have some of the UI/UX and design work showcased at \href {https://www.behance.net/xypnox}{behance.net/xypnox}}
 \end{list}
+
+\vspace{2cm}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.33]{images/footer.png}
+\end{figure}
 
 %\newpage
 %----------------------------------------------------------------------------------------
